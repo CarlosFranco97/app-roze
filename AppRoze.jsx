@@ -1,7 +1,9 @@
 const AppRoze = () => {
     return (
-        <h1>App Roze</h1>
+        <h1 className="text-3xl font-black">
+            App Roze
+        </h1>
     )
 }
 
-export default AppRoze;
+export default AppRoze; 
