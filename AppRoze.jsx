@@ -1,7 +1,12 @@
+import Header from './src/components/Header';
 const AppRoze = () => {
     return (
-        <h1>App Roze</h1>
+        <>
+            <Header />
+                  
+        </>
+        
     )
 }
 
-export default AppRoze;
+export default AppRoze; 
