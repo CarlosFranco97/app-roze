@@ -6,7 +6,7 @@ import Login from './pages/auth/Login'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <AppRoze /> */}
-    <Login />
+    <AppRoze />
+    {/* <Login /> */}
   </StrictMode>,
 )
