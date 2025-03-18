@@ -7,6 +7,9 @@ module.exports = {
       spacing: {
         '30': '30px',
       },
+      fontFamily:{
+        sans: ['Inter', 'sans-serif']
+      }
     },
     plugins: [
       require('tailwind-scrollbar')({ nocompatible: true }),
