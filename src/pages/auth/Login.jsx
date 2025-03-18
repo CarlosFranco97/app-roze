@@ -17,11 +17,11 @@ const Login = () => {
                 <form
                     className='flex flex-col justify-center items-center gap-3 font-bold'
                     action="">
-                    <label htmlFor="">
+                    <label className='text-left w-full ml-6' htmlFor="">
                         Ingresa tú número de celular o correo
                     </label>
                     <input type="text" placeholder="Celular o correo" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px]' />
-                    <label htmlFor="">
+                    <label className='text-left w-full ml-6' htmlFor="">
                         Ingresa tu contraseña
                     </label>
                     <input type="password" placeholder="Contraseña" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px]' />

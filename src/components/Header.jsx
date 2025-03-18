@@ -1,9 +1,9 @@
 const Header = () => {
     return (
         <header className='flex justify-between items-center min-w-full w-full h-auto p-4 bg-[#031716] text-white'>
-            <img src="logo-sin-fondo-roze.svg" alt="logo-roze" />
+            <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
             <div className='flex justify-evenly items-center gap-5'>
-                <button className='bg-white text-black py-2 px-5 rounded-full font-bold'>
+                <button className='bg-white text-black py-2 px-5 rounded-full font-semibold'>
                     Descarga la app
                 </button>
                 <div className='flex justify-center items-center gap-1'>
