@@ -15,13 +15,13 @@ const Values = () => {
                         <img src={service} alt="service" />
                     </div>
                     <div className='bg-white flex justify-center items-center'>
-                        <img src={security} className='w-[160px] h-[160px]' alt="security" />
+                        <img src={security} className='w-[160px] h-[160px] object-contain' alt="security" />
                     </div>
                     <div className='bg-white w-auto h-auto flex justify-center items-center'>
-                        <img src={comfort} className='w-[180px] h-[180px]' alt="comfort" />
+                        <img src={comfort} className='w-[180px] h-[180px] object-contain' alt="comfort" />
                     </div>
                     <div className='col-span-full bg-white flex justify-center items-center'>
-                        <img src={honesty} className='w-[280px] ' alt="honesty" />
+                        <img src={honesty} className='w-[280px] object-contain' alt="honesty" />
                     </div>
                 </div>
             </div>

@@ -1,18 +1,16 @@
 const Header = () => {
     return (
-        <header className='flex justify-between items-center min-w-full w-full h-auto p-4 bg-[#031716] text-white'>
-            <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
-            <div className='flex justify-evenly items-center gap-5'>
-                <button className='bg-white text-black py-2 px-5 rounded-full font-semibold'>
+        <header className='flex justify-between items-center w-full h-[150px] p-4 bg-[#031716] text-white'>
+            <img src="/logo-roze-sin-fondo.svg" className='cursor-pointer' alt="logo-roze" />
+            <div className='flex justify-evenly items-center gap-8'>
+                <button className='bg-white text-black py-2 px-5 rounded-full font-semibold cursor-pointer'>
                     Descarga la app
                 </button>
-                <div className='flex justify-center items-center gap-1'>
-                    <img src="" alt="logo-world" />
-                    <p>ES</p>                                                          
+                <div className='flex justify-center items-center gap-1 cursor-pointer'>
+                    <img src="/world.svg" alt="world" />
+                    <p className='font-semibold'>ES</p>                                                          
                 </div>
-                <div>
-                    <p>Boton hamburguesa</p>
-                </div>
+                <img src="/hamburguer.svg" className='cursor-pointer' alt="" />
             </div>
         </header>
     )
