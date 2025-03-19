@@ -4,10 +4,10 @@ const Registro = () => {
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
       <div className="bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center font-bold text-white">
-        <img src="" alt="logo-roze" />
+        <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
         <div className="flex justify-center items-center">
-          <img src="" alt="icono" />
-          <p>Volver al menú</p>
+          <img src="/arrow.svg" alt="icono" />
+          <p>Volver al menú anterior</p>
         </div>
       </div>
 
@@ -95,12 +95,26 @@ const Registro = () => {
           </span>
 
           <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold flex items-center justify-center gap-3">
-            <FcGoogle className="text-xl" /> Continuar con Google
+            <img src="/google.svg" className="w-6 h-6" alt="logo-google" />
+            Continuar con Google
           </button>
 
-          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold">
+          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold  flex items-center justify-center gap-2">
+            <img src="/facebook.svg" className="w-6 h-6" />
             Continuar con Facebook
           </button>
+          <div className="flex justify-center items-center space-x-4">
+            <img
+              src="/logo-whatsapp.svg"
+              alt="logo-whatsapp"
+              className="w-10 h-10"
+            />
+            <img
+              src="/logo-instagram.svg"
+              alt="logo-instagram"
+              className="w-10 h-10"
+            />
+          </div>
         </form>
       </div>
     </section>
