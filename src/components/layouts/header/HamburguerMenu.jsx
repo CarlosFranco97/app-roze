@@ -2,14 +2,10 @@ import { useEffect } from "react";
 
 const HamburguerMenu = ({openMenu, toggleMenu}) => {
     
-    useEffect(() => {
-        (openMenu) 
-        ? document.body.classList.add('ovferflow-hidden')
-        : document.body.classList.remove('overflow-hidden');
-    }, [openMenu]);
+
 
     return (
-        <div className={`${(!openMenu) ? 'hidden' : 'block'} min-h-screen w-full bg-[#031716]  px-4`}>
+        <div className={`${(!openMenu) ? '-top-[900px]' : 'top-0'} fixed transition-all duration-600 ease-in min-h-screen w-full bg-[#031716] px-4`}>
             <div className='h-screen w-full flex flex-col gap-20'>
                 <section className='flex justify-between items-center px-5'>
                     <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
