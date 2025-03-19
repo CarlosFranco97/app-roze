@@ -11,7 +11,7 @@ const Login = () => {
                 </div>
             </div>
             <div className='w-[50%] flex flex-col justify-center items-center gap-5'>
-                <h2 className='font-black text-4xl'>
+                <h2 className='font-black text-[#031716] text-4xl'>
                     Iniciar sesión
                 </h2>
                 <form

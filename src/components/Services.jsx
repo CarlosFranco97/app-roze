@@ -1,4 +1,4 @@
-import DetailsButton from "./DetailsButton"
+import DetailsButton from "./common/DetailsButton"
 import travels from '../assets/img/travels.png';
 import orderRideShe from '../assets/img/order-ride-she.png';
 import shareRide from '../assets/img/share-ride.png';
