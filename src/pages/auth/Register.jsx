@@ -12,7 +12,7 @@ const Register = () => {
 
       {/* Sección derecha */}
       <div className="w-[50%] flex flex-col justify-center items-center gap-3">
-        <h2 className="font-black text-4xl">Regístrate</h2>
+        <h2 className="font-black text-4xl mb-5">Regístrate</h2>
         <form className="flex flex-col justify-center items-center gap-2 w-[300px] font-bold">
           <label className="font-bold self-start ml-3" htmlFor="telefono">
             Ingresa tu número de celular
