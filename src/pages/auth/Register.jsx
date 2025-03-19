@@ -12,106 +12,106 @@ const Register = () => {
 
       {/* Sección derecha */}
       <div className="w-[50%] flex flex-col justify-center items-center gap-3">
-        <h2 className="font-bold text-2xl">Regístrate</h2>
-        <form className="flex flex-col justify-center items-center gap-2 w-[300px]">
-          <label className="font-bold self-start" htmlFor="telefono">
+        <h2 className="font-black text-4xl">Regístrate</h2>
+        <form className="flex flex-col justify-center items-center gap-2 w-[300px] font-bold">
+          <label className="font-bold self-start ml-3" htmlFor="telefono">
             Ingresa tu número de celular
           </label>
           <input
             id="telefono"
             type="tel"
             placeholder="Número celular"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start" htmlFor="nombre">
+          <label className="font-bold self-start ml-3" htmlFor="nombre">
             Ingresa tu nombre completo
           </label>
           <input
             id="nombre"
             type="text"
             placeholder="Nombre"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start" htmlFor="correo">
+          <label className="font-bold self-start ml-3" htmlFor="correo">
             Ingresa tu correo
           </label>
           <input
             id="correo"
             type="email"
             placeholder="Correo"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start" htmlFor="contrasena">
+          <label className="font-bold self-start ml-3" htmlFor="contrasena">
             Ingresa tu contraseña
           </label>
           <input
             id="contrasena"
             type="password"
             placeholder="Contraseña"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start" htmlFor="confirmarContrasena">
+          <label className="font-bold self-start ml-3" htmlFor="confirmarContrasena">
             Ingresa nuevamente tu contraseña
           </label>
           <input
             id="confirmarContrasena"
             type="password"
             placeholder="Confirmar contraseña"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start" htmlFor="fechaNacimiento">
+          <label className="font-bold self-start ml-3" htmlFor="fechaNacimiento">
             Ingresa tu fecha de nacimiento
           </label>
           <input
             id="fechaNacimiento"
             type="date"
-            className="bg-[#D9D9D9]/70 rounded-full px-4 py-2 w-full"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
           <div className="flex flex-col items-center gap-2">
-            <label htmlFor="terminos" className="text-center">
+            <label htmlFor="terminos" className="text-center cursor-pointer opacity-60">
               Leer términos y condiciones
             </label>
             <div className="flex items-center gap-2">
-              <input type="checkbox" id="terminos" />
+              <input type="checkbox" id="terminos" className='w-5 h-5'/>
               <label htmlFor="terminos" className="text-center">
                 He leído términos y condiciones
               </label>
             </div>
           </div>
 
-          <button className="bg-[#031716] text-white rounded-xl px-4 py-2 w-[170px] font-bold">
+          <button className="bg-[#031716] text-white rounded-2xl p-3 w-[170px] font-bold cursor-pointer mt-10">
             Registrarme
           </button>
 
-          <span className="font-semibold/50 text-center w-full">
+          <span className="font-semibold/50 text-center w-full cursor-pointer opacity-60">
             ¿Ya tienes cuenta?
           </span>
 
-          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold flex items-center justify-center gap-3">
+          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold flex items-center justify-center gap-3 cursor-pointer">
             <img src="/google.svg" className="w-6 h-6" alt="logo-google" />
             Continuar con Google
           </button>
 
-          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold  flex items-center justify-center gap-2">
+          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold  flex items-center justify-center gap-2 cursor-pointer">
             <img src="/facebook.svg" className="w-6 h-6" />
             Continuar con Facebook
           </button>
-          <div className="flex justify-center items-center space-x-4">
+          <div className="flex justify-center items-center space-x-4 mt-3">
             <img
               src="/logo-whatsapp.svg"
               alt="logo-whatsapp"
-              className="w-10 h-10"
+              className="w-10 h-10 cursor-pointer"
             />
             <img
               src="/logo-instagram.svg"
               alt="logo-instagram"
-              className="w-10 h-10"
+              className="w-10 h-10 cursor-pointer"
             />
           </div>
         </form>
