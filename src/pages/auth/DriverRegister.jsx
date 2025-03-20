@@ -1,10 +1,10 @@
-const Register = () => {
+const DriverRegister = () => {
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
       <div className="bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center font-bold text-white ">
         <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
-        <div className="flex justify-center items-center gap-3 cursor-pointer">
+        <div className="flex justify-center items-center gap-2 cursor-pointer">
           <img src="/arrow.svg" alt="icono" />
           <p>Volver al menú anterior</p>
         </div>
@@ -54,7 +54,10 @@ const Register = () => {
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start ml-3" htmlFor="confirmarContrasena">
+          <label
+            className="font-bold self-start ml-3"
+            htmlFor="confirmarContrasena"
+          >
             Ingresa nuevamente tu contraseña
           </label>
           <input
@@ -64,7 +67,10 @@ const Register = () => {
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
 
-          <label className="font-bold self-start ml-3" htmlFor="fechaNacimiento">
+          <label
+            className="font-bold self-start ml-3"
+            htmlFor="fechaNacimiento"
+          >
             Ingresa tu fecha de nacimiento
           </label>
           <input
@@ -72,22 +78,20 @@ const Register = () => {
             type="date"
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
           />
+          <label className="font-bold self-start ml-3" htmlFor="licencia">
+            Ingresa la licencia de conducir
+          </label>
+          <input
+            id="licencia"
+            type="text"
+            placeholder="Licencia de conducir"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+          />
 
-          <div className="flex flex-col items-center gap-2">
-            <label htmlFor="terminos" className="text-center cursor-pointer opacity-60">
-              Leer términos y condiciones
-            </label>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" id="terminos" className='w-5 h-5'/>
-              <label htmlFor="terminos" className="text-center">
-                He leído términos y condiciones
-              </label>
-            </div>
+          <div className="flex justify-between items-center w-full mt-8 mb-5  gap-1 cursor-pointer text-xl  " >
+            <p className="ml-auto font-bold ">Continuar</p>
+            <img src="/arrowright.svg" alt="icono" />
           </div>
-
-          <button className="bg-[#031716] text-white rounded-2xl p-3 w-[170px] font-bold cursor-pointer mt-10">
-            Registrarme
-          </button>
 
           <span className="font-semibold/50 text-center w-full cursor-pointer opacity-60">
             ¿Ya tienes cuenta?
@@ -119,5 +123,4 @@ const Register = () => {
     </section>
   );
 };
-
-export default Register;
+export default DriverRegister;
