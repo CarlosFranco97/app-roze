@@ -25,3 +25,12 @@
 </div>
 
 ###
+
+<div> 
+  <h3> Integrantes </h3>
+  <ul>
+    <li>Anyis Katerine David Castro - 1152694699 - adavid@cesde.net</li>
+    <li>Carlos Iván Franco Felmenal - 1054893062 - carlosfranco63.cf@gmail.com</li>
+    <li>Santiago Alvarez Rico - 1007559038 - santiagocopiacesde@gmail.com</li>
+  </ul>
+</div>
