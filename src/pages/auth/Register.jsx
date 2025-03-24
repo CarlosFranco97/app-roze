@@ -1,11 +1,16 @@
+import SocialMediaIcon from '../../components/common/SocialMediaIcon';
+import googleIcon from '../../assets/icon/google.svg';
+import facebookIcon from '../../assets/icon/facebook.svg';
+import arrowIcon from '../../assets/icon/arrow.svg';
+
 const Register = () => {
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
       <div className="bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center font-bold text-white ">
-        <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
+        <img src="/assets/img/logo-roze-without-background.svg" alt="logo-roze" />
         <div className="flex justify-center items-center gap-3 cursor-pointer">
-          <img src="/arrow.svg" alt="icono" />
+          <img src={arrowIcon} alt="icono" />
           <p>Volver al menú anterior</p>
         </div>
       </div>
@@ -21,7 +26,7 @@ const Register = () => {
             id="telefono"
             type="tel"
             placeholder="Número celular"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <label className="font-bold self-start ml-3" htmlFor="nombre">
@@ -31,7 +36,7 @@ const Register = () => {
             id="nombre"
             type="text"
             placeholder="Nombre"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <label className="font-bold self-start ml-3" htmlFor="correo">
@@ -41,7 +46,7 @@ const Register = () => {
             id="correo"
             type="email"
             placeholder="Correo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <label className="font-bold self-start ml-3" htmlFor="contrasena">
@@ -51,7 +56,7 @@ const Register = () => {
             id="contrasena"
             type="password"
             placeholder="Contraseña"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <label className="font-bold self-start ml-3" htmlFor="confirmarContrasena">
@@ -61,7 +66,7 @@ const Register = () => {
             id="confirmarContrasena"
             type="password"
             placeholder="Confirmar contraseña"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <label className="font-bold self-start ml-3" htmlFor="fechaNacimiento">
@@ -94,25 +99,16 @@ const Register = () => {
           </span>
 
           <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold flex items-center justify-center gap-3 cursor-pointer">
-            <img src="/google.svg" className="w-6 h-6" alt="logo-google" />
+            <img src={googleIcon} className="w-6 h-6" alt="logo-google" />
             Continuar con Google
           </button>
 
           <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold  flex items-center justify-center gap-2 cursor-pointer">
-            <img src="/facebook.svg" className="w-6 h-6" />
+            <img src={facebookIcon} className="w-6 h-6" />
             Continuar con Facebook
           </button>
-          <div className="flex justify-center items-center space-x-4 mt-3">
-            <img
-              src="/logo-whatsapp.svg"
-              alt="logo-whatsapp"
-              className="w-10 h-10 cursor-pointer"
-            />
-            <img
-              src="/logo-instagram.svg"
-              alt="logo-instagram"
-              className="w-10 h-10 cursor-pointer"
-            />
+          <div className='mt-5'>
+            <SocialMediaIcon />
           </div>
         </form>
       </div>

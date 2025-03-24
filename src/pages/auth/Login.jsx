@@ -1,10 +1,15 @@
+import arrowIcon from '../../assets/icon/arrow.svg';
+import googleIcon from '../../assets/icon/google.svg';
+import facebookIcon from '../../assets/icon/facebook.svg';
+import SocialMediaIcon from '../../components/common/SocialMediaIcon';
+
 const Login = () => {
     return (
         <section className='flex w-full min-h-screen'>
             <div className='bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center gap-1 font-bold text-white'>
-                <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
+                <img src="/assets/img/logo-roze-without-background.svg" alt="logo-roze" />
                 <div className='flex justify-center items-center gap-3 cursor-pointer'>
-                    <img src="/arrow.svg" className='w-6 h-6' alt="icono-flecha" />
+                    <img src={arrowIcon} className='w-6 h-6' alt="icono-flecha" />
                     <p>
                         Volver al menú anterior
                     </p>
@@ -33,16 +38,15 @@ const Login = () => {
                         ¿Aún no tienes cuenta?
                     </a>
                     <button className='flex justify-center items-center gap-3 bg-[#D9D9D9]/70 p-3 rounded-2xl p-3 w-[280px] font-bold cursor-pointer'>
-                        <img src="/google.svg" className='w-6 h-6' alt="logo-google" />
+                        <img src={googleIcon} className='w-6 h-6' alt="logo-google" />
                         Continuar con Google
                     </button>
                     <button className='flex justify-center items-center gap-3 bg-[#D9D9D9]/70 p-3 rounded-2xl p-3 w-[280px] font-bold cursor-pointer'>
-                        <img src="/facebook.svg" className='w-6 h-6 rounded-[2px]' alt="" />
+                        <img src={facebookIcon} className='w-6 h-6 rounded-[2px]' alt="" />
                         Continuar con Facebook
                     </button>
-                    <div className='flex justify-center items-center mt-3'>
-                        <img src="/logo-whatsapp.svg" alt="botones-redes" />
-                        <img src="/logo-instagram.svg" alt="botones-redes" />
+                    <div className='mt-4'>
+                        <SocialMediaIcon />
                     </div>
                 </form>
             </div>

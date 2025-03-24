@@ -35,7 +35,7 @@ const Services = () => {
                     infoCards.map((card, index) => {
                         return (
                             <div key={index} className='bg-white flex flex-col justify-between items-center gap-2 w-1/5 h-auto py-5 rounded-2xl'>
-                                <img src={card.image} className=' h-55 w-[80%]' alt={card.alt} />
+                                <img src={card.image} className=' h-55 w-[220px]' alt={card.alt} />
                                 <p>{card.title}</p>
                                 <DetailsButton />
                             </div>

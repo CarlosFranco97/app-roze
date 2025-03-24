@@ -1,3 +1,6 @@
+import iconPlayStore from '../assets/icon/icon-play-store.svg'
+import iconAppStore from '../assets/icon/icon-app-store.svg'
+
 const DownloadApp = () => {
     return (
         <div className='h-[450px] w-full flex justify-center items-center'>
@@ -6,8 +9,8 @@ const DownloadApp = () => {
                     Descarga nuestra app y únete a <span className='text-[#0A7075]'>Roze</span> ahora
                 </h3>
                 <div className='flex justify-center items-center'>
-                    <img src="/icono-app-store.svg" className='cursor-pointer' alt="app-store" />
-                    <img src="/icono-play-store.svg" className='cursor-pointer' alt="play-store" />
+                    <img src={iconAppStore} className='cursor-pointer' alt="app-store" />
+                    <img src={iconPlayStore} className='cursor-pointer' alt="play-store" />
                 </div>
             </div>
         </div>

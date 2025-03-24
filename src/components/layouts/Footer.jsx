@@ -1,7 +1,13 @@
+import iconPlayStore from '../../assets/icon/icon-play-store.svg'
+import iconAppStore from '../../assets/icon/icon-app-store.svg'
+import iconWhatsapp from '../../assets/icon/logo-whatsapp.svg'
+import iconInstagram from '../../assets/icon/logo-instagram.svg'
+import SocialMediaIcon from '../common/SocialMediaIcon'
+
 const Footer = () => {
     return (
         <footer className='bg-[#031716] py-4 px-5 text-white flex flex-col gap-10'>
-            <img src="/logo-roze-sin-fondo.svg" className='w-50 h-50' alt="" />
+            <img src="/assets/img/logo-roze-without-background.svg" className='w-50 h-50' alt="" />
             <nav className='flex justify-between items-center'>
                 <a href="">¿Quiénes somos?</a>
                 <a href="">Términos y condiciones</a>
@@ -9,16 +15,13 @@ const Footer = () => {
             </nav>
             <hr />
             <div className='flex justify-center items-center gap-5'>
-                <img src="/icono-app-store.svg" className='cursor-pointer' alt="logo-app-store" />
-                <img src="/icono-play-store.svg" className='cursor-pointer' alt="logo-play-store" />
+                <img src={iconAppStore} className='cursor-pointer' alt="logo-app-store" />
+                <img src={iconPlayStore} className='cursor-pointer' alt="logo-play-store" />
             </div>
             <div className='flex justify-between items-center'>
-                <div className='flex items-center'>
-                    <img src="logo-whatsapp.svg" alt="logo" />
-                    <img src="logo-instagram.svg" alt="logo" />
-                </div>
+               <SocialMediaIcon />
                 <p>
-                    2025 - Roze Inc
+                 &#169; 2025 - Roze Inc
                 </p>
                 <p>
                     Español - LATAM
