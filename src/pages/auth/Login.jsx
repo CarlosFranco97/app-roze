@@ -20,11 +20,11 @@ const Login = () => {
                     <label className='text-left w-full ml-6' htmlFor="">
                         Ingresa tú número de celular o correo
                     </label>
-                    <input type="text" placeholder="Celular o correo" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px]' />
+                    <input type="text" placeholder="Celular o correo" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px] placeholder:text-[#031716]/50' />
                     <label className='text-left w-full ml-6' htmlFor="">
                         Ingresa tu contraseña
                     </label>
-                    <input type="password" placeholder="Contraseña" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px]' />
+                    <input type="password" placeholder="Contraseña" className='bg-[#D9D9D9]/70 rounded-full  px-5 py-3 w-[320px] placeholder:text-[#031716]/50' />
                     <p>Restablecer contraseña</p>
                     <button className='bg-[#031716] text-white text-xl w-[170px] rounded-2xl p-3 cursor-pointer'>
                         Iniciar sesión

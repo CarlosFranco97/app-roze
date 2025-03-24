@@ -1,9 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import router from './routes/Router'
 import { RouterProvider } from 'react-router-dom'
+import router from './routes/Router'
 import './index.css'
-import HamburguerMenu from './components/layouts/header/HamburguerMenu'
 
 
 createRoot(document.getElementById('root')).render(
@@ -11,6 +10,5 @@ createRoot(document.getElementById('root')).render(
     <RouterProvider router={
       router 
     } />
-    {/* <HamburguerMenu /> */}
   </StrictMode>,
 )

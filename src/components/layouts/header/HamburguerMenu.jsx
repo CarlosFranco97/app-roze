@@ -5,7 +5,7 @@ const HamburguerMenu = ({openMenu, toggleMenu}) => {
 
 
     return (
-        <div className={`${(!openMenu) ? '-top-[900px]' : 'top-0'} fixed transition-all duration-600 ease-in min-h-screen w-full bg-[#031716] px-4`}>
+        <div className={`${(!openMenu) ? '-top-[1200px]' : 'top-0'} fixed transition-all duration-800 ease-in-out min-h-screen w-full bg-[#031716] px-4`}>
             <div className='h-screen w-full flex flex-col gap-20'>
                 <section className='flex justify-between items-center px-5'>
                     <img src="/logo-roze-sin-fondo.svg" alt="logo-roze" />
