@@ -3,6 +3,7 @@ import AppRoze from "../../AppRoze";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import DriverRegister from "../pages/auth/DriverRegister";
+import UserTypeLoginSelector from "../pages/UserTypeLoginSelector";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: '/driverregister',
         element: <DriverRegister />
+    },
+    {
+        path: '/menulogin',
+        element: <UserTypeLoginSelector />
     }
 
 
