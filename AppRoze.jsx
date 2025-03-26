@@ -6,19 +6,18 @@ import StartDriving from './src/components/StartDriving';
 import TravelWithUs from './src/components/TravelWithUs';
 import Values from './src/components/Values';
 import Footer from './src/components/layouts/Footer';
+import Layout from './src/components/layouts/Layout';
 const AppRoze = () => {
 
     return (
-        <>
-            <Header />
+        <Layout>
             <Main />
             <StartDriving />
             <Services />
             <DownloadApp />
             <Values />
             <TravelWithUs />
-            <Footer />
-        </>
+        </Layout>
 
     )
 }
