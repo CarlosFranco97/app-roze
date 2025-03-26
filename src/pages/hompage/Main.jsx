@@ -1,4 +1,4 @@
-import orderRide from '../assets/img/order-ride-bro.png';
+import orderRide from '../../assets/img/order-ride-bro.png';
 
 const Main = () => {
     return (

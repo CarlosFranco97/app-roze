@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import AppRoze from "../../AppRoze";
+import AppRoze from "../pages/hompage/AppRoze";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import DriverRegister from "../pages/auth/DriverRegister";
 import UserTypeLoginSelector from "../pages/UserTypeLoginSelector";
+import AboutUs from "../pages/about/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
         path: '/menulogin',
         element: <UserTypeLoginSelector />
+    },
+    {
+        path: '/aboutus', 
+        element: <AboutUs />
     }
 
 

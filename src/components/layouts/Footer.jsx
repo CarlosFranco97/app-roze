@@ -1,8 +1,6 @@
-import iconPlayStore from '../../assets/icon/icon-play-store.svg'
-import iconAppStore from '../../assets/icon/icon-app-store.svg'
-import iconWhatsapp from '../../assets/icon/logo-whatsapp.svg'
-import iconInstagram from '../../assets/icon/logo-instagram.svg'
-import SocialMediaIcon from '../common/SocialMediaIcon'
+import iconPlayStore from '../../assets/icon/icon-play-store.svg';
+import iconAppStore from '../../assets/icon/icon-app-store.svg';
+import SocialMediaIcon from '../SocialMediaIcon';
 
 const Footer = () => {
     return (

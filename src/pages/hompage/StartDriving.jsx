@@ -1,4 +1,4 @@
-import carDriving from '../assets/img/car-driving.png';
+import carDriving from '../../assets/img/car-driving.png';
 const StartDriving = () => {
     return (
         <section className='w-full min-h-screen flex justify-evenly items-center'>

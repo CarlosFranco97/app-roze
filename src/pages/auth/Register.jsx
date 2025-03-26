@@ -1,4 +1,4 @@
-import SocialMediaIcon from '../../components/common/SocialMediaIcon';
+import SocialMediaIcon from '../../components/SocialMediaIcon';
 import googleIcon from '../../assets/icon/google.svg';
 import facebookIcon from '../../assets/icon/facebook.svg';
 import arrowIcon from '../../assets/icon/arrow.svg';

@@ -1,5 +1,5 @@
-import iconWhatsapp from '../../assets/icon/logo-whatsapp.svg';
-import iconInstagram from '../../assets/icon/logo-instagram.svg';
+import iconWhatsapp from '../assets/icon/logo-whatsapp.svg';
+import iconInstagram from '../assets/icon/logo-instagram.svg';
 
 const SocialMediaIcon = () => {
     return (
