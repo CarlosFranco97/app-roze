@@ -1,9 +1,10 @@
 import SocialMediaIcon from "../../components/SocialMediaIcon";
-import googleIcon from "../../assets/icon/google.svg";
-import facebookIcon from "../../assets/icon/facebook.svg";
 import arrowIcon from "../../assets/icon/arrow.svg";
+import arrowRight from "../../assets/icon/arrow-right.svg";
+import facebookIcon from "../../assets/icon/facebook.svg";
+import googleIcon from "../../assets/icon/google.svg";
 
-const Register = () => {
+const DriverRegisterSecondPage = () => {
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
@@ -12,7 +13,7 @@ const Register = () => {
           src="/assets/img/logo-roze-without-background.svg"
           alt="logo-roze"
         />
-        <div className="flex justify-center items-center gap-3 cursor-pointer">
+        <div className="flex justify-center items-center gap-2 cursor-pointer">
           <img src={arrowIcon} alt="icono" />
           <p>Volver al menú anterior</p>
         </div>
@@ -20,84 +21,85 @@ const Register = () => {
 
       {/* Sección derecha */}
       <div className="w-[50%] flex flex-col justify-center items-center gap-3">
-        <h2 className="font-black text-4xl mb-5">Regístrate</h2>
+        <h2 className="font-black text-4xl mb-5">Estás a un solo paso</h2>
+        <h3 className="font-black text-2xl mb-6">Informacion del vehículo </h3>
         <form className="flex flex-col justify-center items-center gap-2 w-[300px] font-bold">
-          <label className="font-bold self-start ml-3" htmlFor="telefono">
-            Ingresa tu número de celular
+          <label
+            className="font-bold self-start ml-3"
+            htmlFor="vehiclebrand
+"
+          >
+            Ingresa la marca del vehículo
           </label>
           <input
-            id="telefono"
-            type="tel"
-            placeholder="Número celular"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
-
-          <label className="font-bold self-start ml-3" htmlFor="nombre">
-            Ingresa tu nombre completo
-          </label>
-          <input
-            id="nombre"
+            id="vehiclebrand"
             type="text"
-            placeholder="Nombre"
+            placeholder="Marca vehículo"
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
-          <label className="font-bold self-start ml-3" htmlFor="correo">
-            Ingresa tu correo
+          <label className="font-bold self-start ml-3" htmlFor="model">
+            Ingresa el modelo del vehículo
           </label>
           <input
-            id="correo"
-            type="email"
-            placeholder="Correo"
+            id="model"
+            type="text"
+            placeholder="Modelo del vehículo"
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
-          <label className="font-bold self-start ml-3" htmlFor="contrasena">
-            Ingresa tu contraseña
+          <label className="font-bold self-start ml-3" htmlFor="year">
+            Ingresa año del vehiculo
           </label>
           <input
-            id="contrasena"
-            type="password"
-            placeholder="Contraseña"
+            id="year"
+            type="text"
+            placeholder="Año del vehículo"
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
-          <label
-            className="font-bold self-start ml-3"
-            htmlFor="confirmarContrasena"
-          >
-            Ingresa nuevamente tu contraseña
+          <label className="font-bold self-start ml-3" htmlFor="color">
+            Ingresa el color del vehículo
           </label>
           <input
-            id="confirmarContrasena"
-            type="password"
-            placeholder="Confirmar contraseña"
+            id="color"
+            type="text"
+            placeholder="Color del vehículo"
             className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
-          <label
-            className="font-bold self-start ml-3"
-            htmlFor="fechaNacimiento"
-          >
-            Ingresa tu fecha de nacimiento
+          <label className="font-bold self-start ml-3" htmlFor="plate">
+            Ingresa placa del vehículo
           </label>
           <input
-            id="fechaNacimiento"
-            type="date"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+            id="platecar"
+            type="text"
+            placeholder=" PLaca del vehículo"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
+          />
+
+          <label className="font-bold self-start ml-3" htmlFor="licencia">
+            Ingresa la licencia de conducir
+          </label>
+          <input
+            id="licencia"
+            type="text"
+            placeholder="Licencia de conducir"
+            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
           />
 
           <div className="flex flex-col items-center gap-2">
             <label
               htmlFor="terminos"
-              className="text-center cursor-pointer opacity-60 hover:underline mt-5 mb-3"
+              className="text-center cursor-pointer opacity-60   mt-5  mb-1 hover:underline"
+              
             >
               Leer términos y condiciones
             </label>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <input type="checkbox" id="terminos" className="w-5 h-5" />
               <label htmlFor="terminos" className="text-center">
-                Acepto término y condiciones
+                Acepto términos y condiciones
               </label>
             </div>
           </div>
@@ -110,16 +112,7 @@ const Register = () => {
             ¿Ya tienes cuenta?
           </span>
 
-          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold flex items-center justify-center gap-3 cursor-pointer">
-            <img src={googleIcon} className="w-6 h-6" alt="logo-google" />
-            Continuar con Google
-          </button>
-
-          <button className="bg-[#D9D9D9]/70 rounded-2xl p-3 w-full font-bold  flex items-center justify-center gap-2 cursor-pointer">
-            <img src={facebookIcon} className="w-6 h-6" />
-            Continuar con Facebook
-          </button>
-          <div className="mt-5">
+          <div className="mt-4">
             <SocialMediaIcon />
           </div>
         </form>
@@ -127,5 +120,4 @@ const Register = () => {
     </section>
   );
 };
-
-export default Register;
+export default DriverRegisterSecondPage;
