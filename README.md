@@ -1,12 +1,6 @@
-<h1 align="left">App Roze</h1>
-
+# Proyeto: App Roze
 ###
-
-<p align="left">Aplicacion</p>
-
-###
-
-<h2 align="left">Aplicacion para realizar viajes tipo uber, donde se usaron tecnologias como react para el manejo del Frontend y Backend proximamente con Java + Spring Boot.</h2>
+Aplicacion para realizar viajes tipo uber, donde se usaron tecnologias como react para el manejo del Frontend y Backend proximamente con Java + Spring Boot
 
 ###
 
@@ -26,11 +20,9 @@
 
 ###
 
-<div> 
-  <h3> Integrantes </h3>
-  <ul>
-    <li>Anyis Katerine David Castro - 1152694699 - adavid@cesde.net</li>
-    <li>Carlos Iván Franco Felmenal - 1054893062 - carlosfranco63.cf@gmail.com</li>
-    <li>Santiago Alvarez Rico - 1007559038 - santiagocopiacesde@gmail.com</li>
-  </ul>
-</div>
+## Integrantes
+
+Anyis Katerine David Castro - 1152694699 - adavid@cesde.net
+Carlos Iván Franco Felmenal - 1054893062 - carlosfranco63.cf@gmail.com
+Santiago Alvarez Rico - 1007559038 - santiagocopiacesde@gmail.com
+
