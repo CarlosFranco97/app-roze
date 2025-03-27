@@ -3,6 +3,8 @@ import arrowIcon from '../../assets/icon/arrow.svg'
 import arrowRight from '../../assets/icon/arrow-right.svg';
 import facebookIcon from '../../assets/icon/facebook.svg';
 import googleIcon from '../../assets/icon/google.svg';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -97,7 +99,7 @@ const DriverRegister = () => {
           />
 
           <div className="flex justify-between items-center w-full mt-8 mb-5  gap-1 cursor-pointer text-xl">
-            <p className="ml-auto font-bold ">Continuar</p>
+            <Link className="ml-auto font-bold " to= "/driverregistersecondpage">Continuar</Link>
             <img src={arrowRight} alt="icono" />
           </div>
 
