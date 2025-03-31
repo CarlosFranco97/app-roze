@@ -1,8 +1,6 @@
-import SocialMediaIcon from "../../components/SocialMediaIcon";
-import arrowIcon from "../../assets/icon/arrow.svg";
-import arrowRight from "../../assets/icon/arrow-right.svg";
-import facebookIcon from "../../assets/icon/facebook.svg";
-import googleIcon from "../../assets/icon/google.svg";
+import SocialMediaIcon from '../../components/SocialMediaIcon';
+import arrowIcon from '../../assets/icon/arrow.svg';
+
 
 const DriverRegisterSecondPage = () => {
   return (
