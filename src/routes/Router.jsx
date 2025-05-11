@@ -2,10 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import AppRoze from "../pages/hompage/AppRoze";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
-import DriverRegister from "../pages/auth/DriverRegister";
-import DriverRegisterSecondPage from "../pages/auth/DriverRegisterSecondPage";
+// import DriverRegister from "../pages/auth/DriverRegister";
+// import DriverRegisterSecondPage from "../pages/auth/DriverRegisterSecondPage";
 import UserTypeLoginSelector from "../pages/UserTypeLoginSelector";
 import AboutUs from "../pages/about/AboutUs";
+import DriverRegisterPage from "../pages/auth/DriverRegisterPage";
+DriverRegisterPage
 
 const router = createBrowserRouter([
     {
@@ -24,12 +26,12 @@ const router = createBrowserRouter([
     },
     {
         path: '/driverregister',
-        element: <DriverRegister />
+        element: <DriverRegisterPage />
     },
-    {
-       path:'/driverregistersecondpage',
-       element: <DriverRegisterSecondPage />
-    }
+    // {
+    //    path:'/driverregistersecondpage',
+    //    element: <DriverRegisterSecondPage />
+    // }
     ,
     {
         path: '/menulogin',

@@ -3,17 +3,62 @@ import arrowIcon from "../../assets/icon/arrow.svg";
 import arrowRight from "../../assets/icon/arrow-right.svg";
 import facebookIcon from "../../assets/icon/facebook.svg";
 import googleIcon from "../../assets/icon/google.svg";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+ise
 
-const DriverRegisterSecondPage = () => {
+const DriverRegisterSecondPage = ({ onBack, onSubmit }) => {
+  
+  const [vehicleDataState, setVehicleDataState] = useState({
+    brand: "",
+    model: "",
+    year: "",
+    color: "",
+    plate: "",
+    license: "",
+    termsAccepted: false,
+  });
+
+  const campos = [
+  { name: "brand", label: "Marca" },
+  { name: "model", label: "Modelo" },
+  { name: "year", label: "Año" },
+  { name: "color", label: "Color" },
+  { name: "plate", label: "Placa" },
+  { name: "license", label: "Licencia de conducción" },
+];
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setVehicleDataState({
+      ...vehicleDataState,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!vehicleDataState.termsAccepted) {
+      alert("Debes aceptar los términos y condiciones.");
+      return;
+    }
+
+    onSubmit(vehicleDataState);
+    navigate("/login");
+  };
+
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
-      <div className="bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center font-bold text-white ">
+      <div className="bg-[#031716] min-h-screen w-[50%] flex flex-col justify-center items-center font-bold text-white">
         <img
           src="/assets/img/logo-roze-without-background.svg"
           alt="logo-roze"
         />
-        <div className="flex justify-center items-center gap-2 cursor-pointer">
+        <div
+          className="flex justify-center items-center gap-2 cursor-pointer"
+          onClick={onBack}
+        >
           <img src={arrowIcon} alt="icono" />
           <p>Volver al menú anterior</p>
         </div>
@@ -22,102 +67,59 @@ const DriverRegisterSecondPage = () => {
       {/* Sección derecha */}
       <div className="w-[50%] flex flex-col justify-center items-center gap-3">
         <h2 className="font-black text-4xl mb-5">Estás a un solo paso</h2>
-        <h3 className="font-black text-2xl mb-6">Informacion del vehículo </h3>
-        <form className="flex flex-col justify-center items-center gap-2 w-[300px] font-bold">
-          <label
-            className="font-bold self-start ml-3"
-            htmlFor="vehiclebrand
-"
-          >
-            Ingresa la marca del vehículo
-          </label>
-          <input
-            id="vehiclebrand"
-            type="text"
-            placeholder="Marca vehículo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
+        <h3 className="font-black text-2xl mb-6">Información del vehículo</h3>
 
-          <label className="font-bold self-start ml-3" htmlFor="model">
-            Ingresa el modelo del vehículo
-          </label>
-          <input
-            id="model"
-            type="text"
-            placeholder="Modelo del vehículo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
+        <form
+  onSubmit={handleSubmit}
+  className="flex flex-col justify-center items-center gap-2 w-[300px] font-bold"
+>
+  {campos.map((campo) => (
+    <div key={campo.name}>
+      <label htmlFor={campo.name} className="font-bold self-start ml-3">
+        {campo.label}
+      </label>
+      <input
+        id={campo.name}
+        type={campo.name === "year" ? "number" : "text"}
+        name={campo.name}
+        value={vehicleDataState[campo.name]}
+        onChange={handleChange}
+        className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px]"
+        required
+      />
+    </div>
+  ))}
 
-          <label className="font-bold self-start ml-3" htmlFor="year">
-            Ingresa año del vehiculo
-          </label>
-          <input
-            id="year"
-            type="text"
-            placeholder="Año del vehículo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
+  <div className="flex items-center gap-2 mt-4">
+    <input
+      type="checkbox"
+      id="termsAccepted"
+      name="termsAccepted"
+      checked={vehicleDataState.termsAccepted}
+      onChange={handleChange}
+      required
+    />
+    <label htmlFor="termsAccepted" className="text-sm">
+      Acepto los términos y condiciones
+    </label>
+  </div>
 
-          <label className="font-bold self-start ml-3" htmlFor="color">
-            Ingresa el color del vehículo
-          </label>
-          <input
-            id="color"
-            type="text"
-            placeholder="Color del vehículo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
+  <button
+    type="submit"
+    className="flex justify-between items-center w-full mt-8 mb-5 gap-1 cursor-pointer text-xl bg-[#031716] text-white py-2 px-4 rounded-full"
+  >
+    Registrarme
+    <img src={arrowRight} alt="icono" />
+  </button>
 
-          <label className="font-bold self-start ml-3" htmlFor="plate">
-            Ingresa placa del vehículo
-          </label>
-          <input
-            id="platecar"
-            type="text"
-            placeholder=" PLaca del vehículo"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
+  <div className="mt-4">
+    <SocialMediaIcon />
+  </div>
+</form>
 
-          <label className="font-bold self-start ml-3" htmlFor="licencia">
-            Ingresa la licencia de conducir
-          </label>
-          <input
-            id="licencia"
-            type="text"
-            placeholder="Licencia de conducir"
-            className="bg-[#D9D9D9]/70 rounded-full px-5 py-3 w-[320px] placeholder:text-[#031716]/50"
-          />
-
-          <div className="flex flex-col items-center gap-2">
-            <label
-              htmlFor="terminos"
-              className="text-center cursor-pointer opacity-60   mt-5  mb-1 hover:underline"
-              
-            >
-              Leer términos y condiciones
-            </label>
-            <div className="flex items-center gap-3">
-              <input type="checkbox" id="terminos" className="w-5 h-5" />
-              <label htmlFor="terminos" className="text-center">
-                Acepto términos y condiciones
-              </label>
-            </div>
-          </div>
-
-          <button className="bg-[#031716] text-white rounded-2xl p-3 w-[170px] font-bold cursor-pointer mt-10">
-            Registrarme
-          </button>
-
-          <span className="font-semibold/50 text-center w-full cursor-pointer opacity-60">
-            ¿Ya tienes cuenta?
-          </span>
-
-          <div className="mt-4">
-            <SocialMediaIcon />
-          </div>
-        </form>
       </div>
     </section>
   );
 };
+
 export default DriverRegisterSecondPage;
