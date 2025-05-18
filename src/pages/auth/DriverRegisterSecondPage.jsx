@@ -72,6 +72,7 @@ const DriverRegisterSecondPage = ({ onBack, onSubmit }) => {
     navigate("/menulogin/login");
   };
 
+
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}

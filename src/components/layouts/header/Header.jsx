@@ -2,6 +2,7 @@ import { useState } from "react";
 import worldIcon from '../../../assets/icon/world-icon.svg';
 import hamburguerIcon from '../../../assets/icon/hamburguer-icon.svg';
 import HamburguerMenu from "./HamburguerMenu";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -11,7 +12,9 @@ const Header = () => {
     return (
         <>
             <header className={`flex justify-between items-center w-full h-[150px] p-4 bg-[#031716] text-white`}>
-                <img src='assets/img/logo-roze-without-background.svg' className='cursor-pointer' alt="logo-roze" />
+                <Link to='/'>
+                    <img src='assets/img/logo-roze-without-background.svg' className='cursor-pointer' alt="logo-roze" />
+                </Link>
                 <div className='flex justify-evenly items-center gap-8'>
                     <button className='bg-white text-black py-2 px-5 rounded-full font-semibold cursor-pointer'>
                         Descarga la app
