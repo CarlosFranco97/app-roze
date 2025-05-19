@@ -16,10 +16,10 @@ const UserProfile = () => {
 
       {/*imagen*/}
       <img
-        src="https://maps.googleapis.com/maps/api/staticmap?center=Medellin,Colombia&zoom=13&size=600x400&key=TU_API_KEY"
-        alt="mapa"
-        className="w-full h-full object-cover"
-      />
+  src="https://maps.geoapify.com/v1/staticmap?style=osm-carto&width=800&height=600&center=lonlat:-75.5636,6.2518&zoom=13&apiKey=b05189a1881d4351af65b4818f429ed2"
+  alt="mapa de Medellín"
+  className="w-full h-full object-cover"
+/>
 
       {/* Formulario sobrepuesto */}
       <div className="absolute bottom-6 left-4 right-4 bg-white rounded-xl shadow-lg p-4 z-10">
