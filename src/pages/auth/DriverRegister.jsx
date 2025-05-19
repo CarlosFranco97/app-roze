@@ -9,6 +9,13 @@ import { Link } from 'react-router-dom';
 
 
 const DriverRegister = () => {
+  console.log('se esta renderizano el driverregister');
+  
+  const handleChange = ({target}) => {
+    const {value} = target
+    console.log(value);
+  }
+  
   return (
     <section className="flex w-full min-h-screen">
       {/* Sección izquierda */}
@@ -28,6 +35,7 @@ const DriverRegister = () => {
             Ingresa tu número de celular
           </label>
           <input
+           onChange={handleChange}
             id="telefono"
             type="tel"
             placeholder="Número celular"
