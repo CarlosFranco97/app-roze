@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/auth/Login";
+import Login from "../features/auth/components/Login";
 import AboutUs from "../pages/about/AboutUs";
-import AppRoze from "../pages/homepage/AppRoze";
-import DriverRegisterPage from "../pages/auth/DriverRegisterPage";
+import AppRoze from "../features/homepage/components/AppRoze";
+import DriverRegisterPage from "../features/register/DriverRegisterPage";
 import UserTypeRegisterSelector from "../pages/UserTypeRegisterSelector";
-import UserRegister from "../pages/auth/UserRegister";
+import UserRegister from "../features/register/UserRegister";
 import UserProfile from "../pages/user/UserProfile";
 import DriverProfile from "../pages/driver/driverProfile";
 

@@ -164,7 +164,7 @@ const DriverRegister = ({ onSubmit }) => {
 
           <button
             type="submit"
-            className="flex justify-between items-center w-full mt-8 mb-5 gap-1 cursor-pointer text-xl bg-[#031716] text-white py-2 px-4 rounded-full"
+            className="flex justify-end items-center w-full mt-8 mb-5 gap-1 cursor-pointer"
           >
             Continuar
             <img src={arrowRight} alt="icono" />

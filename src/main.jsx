@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes/Router'
 import './index.css'
-import DriverRegisterPage from './pages/auth/DriverRegisterPage'
+import DriverRegisterPage from './features/register/DriverRegisterPage'
 
 
 
