@@ -1,6 +1,6 @@
-import arrowIcon from "../../assets/icon/arrow.svg";
-import googleIcon from "../../assets/icon/google.svg";
-import facebookIcon from "../../assets/icon/facebook.svg";
+import arrowIcon from "../../../assets/icon/arrow.svg";
+import googleIcon from "../../../assets/icon/google.svg";
+import facebookIcon from "../../../assets/icon/facebook.svg";
 import SocialMediaIcon from "../../../components/SocialMediaIcon";
 import { Link, useNavigate } from "react-router-dom";
 import useForm from "../hooks/useForm";

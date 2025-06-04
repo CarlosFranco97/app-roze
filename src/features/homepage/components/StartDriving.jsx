@@ -1,4 +1,4 @@
-import carDriving from '../../assets/img/car-driving.png';
+import carDriving from '../../../assets/img/car-driving.png';
 import { Link } from 'react-router-dom';
 const StartDriving = () => {
     return (
