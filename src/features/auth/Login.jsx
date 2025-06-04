@@ -1,16 +1,17 @@
 import arrowIcon from "../../../assets/icon/arrow.svg";
 import googleIcon from "../../../assets/icon/google.svg";
 import facebookIcon from "../../../assets/icon/facebook.svg";
-import SocialMediaIcon from "../../../components/SocialMediaIcon";
+import SocialMediaIcon from "../../components/SocialMediaIcon";
 import { Link, useNavigate } from "react-router-dom";
-import useForm from "../hooks/useForm";
+import useForm from "../auth/hooks/useForm"
+
 
 
 const Login = () => {
   const navigate = useNavigate();
-  const { formState, handleChange, handleLogin } = useForm({
-    emailOrPhone: '',
-    password: ''
+  const { formState, handleChange, handleLogin,error } = useForm({
+    emailOrPhone: "",
+    password: "",
   });
 
   return (
@@ -51,7 +52,7 @@ const Login = () => {
           <input
             id="password"
             type="password"
-            name="emailOrPhone"
+            name="password"
             placeholder="Contraseña"
             value={formState.password}
             onChange={(e) => handleChange(e)}
@@ -62,6 +63,8 @@ const Login = () => {
             type="submit"
             className="bg-[#031716] text-white text-xl w-[170px] rounded-2xl p-3 cursor-pointer"
           >
+            {error && <p className="text-red-600 font-semibold">{error}</p>}
+
             Iniciar sesión
           </button>
           <a href="" className="opacity-50">
