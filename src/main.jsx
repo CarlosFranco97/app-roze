@@ -5,10 +5,13 @@ import router from './routes/Router'
 import './index.css'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={
       router 
     } />
+
+    
   </StrictMode>,
 )

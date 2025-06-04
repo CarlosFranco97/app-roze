@@ -1,5 +1,5 @@
-import iconPlayStore from '../../assets/icon/icon-play-store.svg'
-import iconAppStore from '../../assets/icon/icon-app-store.svg'
+import iconPlayStore from '../../../assets/icon/icon-play-store.svg'
+import iconAppStore from '../../../assets/icon/icon-app-store.svg'
 
 const DownloadApp = () => {
     return (

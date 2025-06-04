@@ -1,4 +1,5 @@
-import carDriving from '../../assets/img/car-driving.png';
+import carDriving from '../../../assets/img/car-driving.png';
+import { Link } from 'react-router-dom';
 const StartDriving = () => {
     return (
         <section className='w-full min-h-screen flex justify-evenly items-center'>
@@ -13,9 +14,10 @@ const StartDriving = () => {
                 <p className='text-[#0A7075] font-bold text-2xl'>
                     Recibe bonos por fidelidad
                 </p>
-                <button className='text-[#0A7075] text-white text-center font-bold bg-[#031716] w-[330px] px-5 py-3 text-2xl rounded-3xl cursor-pointer'>
+               <Link to ="/driverregister"> <button className='text-[#0A7075] text-white text-center font-bold bg-[#031716] w-[330px] px-5 py-3 text-2xl rounded-3xl cursor-pointer'>
                     Registrate para manejar
                 </button>
+                </Link>
             </div>
         </section>
     )

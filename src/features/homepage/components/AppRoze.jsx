@@ -4,7 +4,7 @@ import Services from './Services';
 import StartDriving from './StartDriving';
 import TravelWithUs from './TravelWithUs';
 import Values from './Values';
-import Layout from '../../components/layouts/Layout';
+import Layout from '../../../components/layouts/Layout';
 const AppRoze = () => {
 
     return (

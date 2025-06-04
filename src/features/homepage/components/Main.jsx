@@ -1,4 +1,5 @@
-import orderRide from '../../assets/img/order-ride-bro.png';
+import orderRide from '../../../assets/img/order-ride-bro.png';
+import { Link } from "react-router-dom";
 
 const Main = () => {
     return (
@@ -10,9 +11,11 @@ const Main = () => {
             <p className='ml-10 text-[#D9D9D9] font-bold text-2xl'>
                 Tú primer viaje totalmente gratis
             </p>
+            <Link to="/menuregister">
             <button className='bg-white font-bold px-5 py-3 text-2xl rounded-3xl ml-10 w-[320px]'>
                 Regístrate para viajar
             </button>
+            </Link>
         </section>
         <img src={orderRide} className='w-[520px] h-[520px]' alt='order-ride' />
     </main>  

@@ -1,7 +1,7 @@
-import service from '../../assets/img/service.png';
-import security from '../../assets/img/security.png';
-import honesty from '../../assets/img/honesty.png';
-import comfort from '../../assets/img/comfort.png';
+import service from '../../../assets/img/service.png';
+import security from '../../../assets/img/security.png';
+import honesty from '../../../assets/img/honesty.png';
+import comfort from '../../../assets/img/comfort.png';
 
 const Values = () => {
     return (

@@ -1,41 +1,33 @@
 import { createBrowserRouter } from "react-router-dom";
-import AppRoze from "../pages/hompage/AppRoze";
-import Login from "../pages/auth/Login";
-import Register from "../pages/auth/Register";
-import DriverRegister from "../pages/auth/DriverRegister";
-import UserTypeLoginSelector from "../pages/UserTypeLoginSelector";
+import Login from "../features/auth/components/Login";
 import AboutUs from "../pages/about/AboutUs";
+import AppRoze from "../features/homepage/components/AppRoze";
+import DriverRegisterPage from "../features/register/DriverRegisterPage";
+import UserTypeRegisterSelector from "../pages/UserTypeRegisterSelector";
+
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <AppRoze />
     },
-
     {
-        path: '/register',
-        element: <Register />
-    },
-
-    {
-        path: '/menulogin/login',
+        path: '/login',
         element: <Login />
     },
     {
         path: '/driverregister',
-        element: <DriverRegister />
+        element: <DriverRegisterPage />
     },
+    
     {
-        path: '/menulogin',
-        element: <UserTypeLoginSelector />
+        path:'/menuregister',
+        element:<UserTypeRegisterSelector/>
     },
     {
         path: '/aboutus', 
         element: <AboutUs />
-    }
-
-
-
+    },
 ]);
 
 export default router;
