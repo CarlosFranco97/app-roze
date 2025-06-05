@@ -1,6 +1,6 @@
 // src/pages/auth/hooks/useForm.js
 import { useState } from "react";
-import api from "../../../api/api";
+import loginUser  from "../api/loginUser";
 import { useNavigate } from "react-router-dom";
 
 const useForm = (initialState) => {
@@ -10,7 +10,7 @@ const useForm = (initialState) => {
 
   const handleChange = (e) => {
     setFormState({
-      ...formState,
+      ...formState, 
       [e.target.name]: e.target.value,
     });
   };
@@ -20,10 +20,11 @@ const useForm = (initialState) => {
     setError(null);
 
     try {
-      const response = await api.post("/auth/login", formState);
+      const response = await loginUser(formState);
 
       const { token, user } = response.data;
 
+      console.log(response);
     
       localStorage.setItem("token", token);
       localStorage.setItem("user", JSON.stringify(user));

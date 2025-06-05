@@ -1,6 +1,6 @@
-import arrowIcon from "../../../assets/icon/arrow.svg";
-import googleIcon from "../../../assets/icon/google.svg";
-import facebookIcon from "../../../assets/icon/facebook.svg";
+import arrowIcon from "../../assets/icon/arrow.svg";
+import googleIcon from "../../assets/icon/google.svg";
+import facebookIcon from "../../assets/icon/facebook.svg";
 import SocialMediaIcon from "../../components/SocialMediaIcon";
 import { Link, useNavigate } from "react-router-dom";
 import useForm from "../auth/hooks/useForm"
@@ -63,10 +63,10 @@ const Login = () => {
             type="submit"
             className="bg-[#031716] text-white text-xl w-[170px] rounded-2xl p-3 cursor-pointer"
           >
-            {error && <p className="text-red-600 font-semibold">{error}</p>}
 
             Iniciar sesión
           </button>
+            {error && <p className="text-red-600 font-semibold">{error}</p>}
           <a href="" className="opacity-50">
             ¿Aún no tienes cuenta?
           </a>
