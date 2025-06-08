@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import UserMap from "./components/UserMap"
 import VehicleSelection from "./components/VehicleSelection"

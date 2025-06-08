@@ -1,5 +1,3 @@
-"use client"
-
 import hamburguerIcon from "../../../assets/icon/hamburguer-icon.svg"
 
 const VehicleSelection = ({ onVehicleSelect, onBack, tripData }) => {

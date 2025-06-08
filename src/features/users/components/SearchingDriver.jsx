@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect } from "react"
 import hamburguerIcon from "../../../assets/icon/hamburguer-icon.svg"
 import DriversMap from "../../conductors/DriversMap"

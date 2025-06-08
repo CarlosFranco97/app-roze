@@ -1,5 +1,3 @@
-"use client"
-
 import hamburguerIcon from "../../../assets/icon/hamburguer-icon.svg"
 import DriversMap from "../../conductors/DriversMap"
 const TripInProgress = ({ driver, onCancelTrip, onOpenChat }) => {
