@@ -30,7 +30,7 @@ const useForm = (initialState) => {
       localStorage.setItem("user", JSON.stringify(user));
 
      
-      navigate("/dashboard"); 
+      navigate("/aboutus"); 
     } catch (err) {
       console.error("Error al iniciar sesión", err);
       setError("Correo o contraseña incorrectos");

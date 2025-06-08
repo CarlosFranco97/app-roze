@@ -29,7 +29,7 @@ const HamburguerMenu = ({ openMenu, toggleMenu }) => {
                     >¿Quiénes somos?
                     </Link>
                     <Link 
-                    to='/menulogin'
+                    to='/login'
                     className='hover:bg-white/20 rounded-4xl py-3 px-4 transition-all ease-in-out duration-500'>
                         Iniciar sesión
                     </Link>
